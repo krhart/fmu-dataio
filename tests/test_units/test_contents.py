@@ -182,8 +182,7 @@ def test_content_property_as_dict(gridproperty, globalconfig2):
         ).generate_metadata(gridproperty)
 
     assert meta["data"]["content"] == "property"
-    # TODO: add next line when schema defines content_specific for property
-    # assert meta["data"]["property"] == content_specifc
+    assert meta["data"]["property"] == content_specifc
 
 
 def test_content_seismic_as_dict(gridproperty, globalconfig2):
